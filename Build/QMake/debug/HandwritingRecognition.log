@@ -1,0 +1,13 @@
+﻿  HandwritingRecognition.cpp
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(29): warning C4305: '=': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(113): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(126): warning C4189: 'digit': local variable is initialized but not referenced
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(174): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(181): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(172): warning C4189: 'index2': local variable is initialized but not referenced
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(218): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(254): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(372): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(412): warning C4018: '<': signed/unsigned mismatch
+  HandwritingRecognition.vcxproj -> C:\HandwritingRecognition\Build\QMake\..\..\Binaries\HandwritingRecognition.exe

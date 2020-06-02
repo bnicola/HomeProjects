@@ -1,0 +1,44 @@
+﻿  MOC ../../Implementation/DrawingBoardScene.hpp
+  MOC ../../Implementation/DrawingPen.hpp
+  MOC ../../Implementation/HandwritingRecognition.hpp
+  UIC ../../Implementation/Forms/HandwritingRecognition.ui
+  DrawingBoardScene.cpp
+c:\handwritingrecognition\implementation\drawingboardscene.cpp(14): warning C4100: 'event': unreferenced formal parameter
+c:\handwritingrecognition\implementation\drawingboardscene.cpp(32): warning C4100: 'e': unreferenced formal parameter
+  DrawingPen.cpp
+c:\handwritingrecognition\implementation\drawingpen.cpp(22): warning C4100: 'widget': unreferenced formal parameter
+c:\handwritingrecognition\implementation\drawingpen.cpp(22): warning C4100: 'option': unreferenced formal parameter
+  HandwritingRecognition.cpp
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(29): warning C4305: '=': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(111): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(113): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(126): warning C4189: 'digit': local variable is initialized but not referenced
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(174): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(181): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(172): warning C4189: 'index2': local variable is initialized but not referenced
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(218): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(254): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(372): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\handwritingrecognition.cpp(412): warning C4018: '<': signed/unsigned mismatch
+  Matrix.cpp
+c:\handwritingrecognition\implementation\matrix.hpp(31): warning C4244: '=': conversion from 'double' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+c:\handwritingrecognition\implementation\matrix.cpp(11): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\handwritingrecognition\implementation\matrix.cpp(13): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\matrix.cpp(40): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\matrix.cpp(53): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\matrix.cpp(68): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\handwritingrecognition\implementation\matrix.cpp(138): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  NeuralNetwork.cpp
+c:\handwritingrecognition\implementation\neuralnetwork.cpp(154): warning C4018: '<': signed/unsigned mismatch
+c:\handwritingrecognition\implementation\neuralnetwork.cpp(183): warning C4018: '<': signed/unsigned mismatch
+  handwritingrecognition_plugin_import.cpp
+  main.cpp
+  moc_DrawingBoardScene.cpp
+  moc_DrawingPen.cpp
+  moc_HandwritingRecognition.cpp
+  Generating Code...
+  HandwritingRecognition.vcxproj -> C:\HandwritingRecognition\Build\QMake\..\..\Binaries\HandwritingRecognition.exe

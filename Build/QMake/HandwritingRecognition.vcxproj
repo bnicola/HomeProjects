@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D21FE0E-6894-3DDE-9E3D-05313A9070D8}</ProjectGuid>
+    <RootNamespace>HandwritingRecognition</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>..\..\Binaries\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>HandwritingRecognition</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>..\..\Binaries\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>HandwritingRecognition</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\Binaries\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">HandwritingRecognition</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</IgnoreImportLibrary>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\Binaries\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">HandwritingRecognition</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\Interface;..\..\Implementation;..\..\..\Qt\Static\5.6.3\include;..\..\..\Qt\Static\5.6.3\include\QtOpenGL;..\..\..\Qt\Static\5.6.3\include\QtWidgets;..\..\..\Qt\Static\5.6.3\include\QtGui;..\..\..\Qt\Static\5.6.3\include\QtNetwork;..\..\..\Qt\Static\5.6.3\include\QtScript;..\..\..\Qt\Static\5.6.3\include\QtCore;debug;.;..\..\..\Qt\Static\5.6.3\mkspecs\win32-msvc2017;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SCRIPT_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Static\5.6.3\lib\Qt5OpenGLd.lib;C:\Qt\Static\5.6.3\lib\Qt5Widgetsd.lib;C:\Qt\Static\5.6.3\lib\Qt5Scriptd.lib;C:\Qt\Static\5.6.3\plugins\platforms\qwindowsd.lib;gdi32.lib;ole32.lib;winspool.lib;imm32.lib;winmm.lib;oleaut32.lib;opengl32.lib;shlwapi.lib;shell32.lib;rpcrt4.lib;C:\Qt\Static\5.6.3\lib\Qt5PlatformSupportd.lib;C:\Qt\Static\5.6.3\lib\Qt5DBusd.lib;ws2_32.lib;netapi32.lib;user32.lib;C:\Qt\Static\5.6.3\lib\qtfreetyped.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qicnsd.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qicod.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qtgad.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qtiffd.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qwbmpd.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qwebpd.lib;C:\Qt\Static\5.6.3\lib\Qt5Guid.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;glu32.lib;opengl32.lib;gdi32.lib;C:\Qt\Static\5.6.3\lib\qtharfbuzzngd.lib;C:\Qt\Static\5.6.3\plugins\bearer\qgenericbearerd.lib;C:\Qt\Static\5.6.3\plugins\bearer\qnativewifibearerd.lib;C:\Qt\Static\5.6.3\lib\Qt5Networkd.lib;dnsapi.lib;iphlpapi.lib;advapi32.lib;C:\Qt\Static\5.6.3\lib\Qt5Cored.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;mpr.lib;C:\Qt\Static\5.6.3\lib\qtpcred.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Static\5.6.3\lib;C:\Qt\Static\5.6.3\plugins\platforms;C:\Qt\Static\5.6.3\plugins\imageformats;C:\Qt\Static\5.6.3\plugins\bearer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\HandwritingRecognition.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SCRIPT_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\Interface;..\..\Implementation;..\..\..\Qt\Static\5.6.3\include;..\..\..\Qt\Static\5.6.3\include\QtOpenGL;..\..\..\Qt\Static\5.6.3\include\QtWidgets;..\..\..\Qt\Static\5.6.3\include\QtGui;..\..\..\Qt\Static\5.6.3\include\QtNetwork;..\..\..\Qt\Static\5.6.3\include\QtScript;..\..\..\Qt\Static\5.6.3\include\QtCore;release;.;..\..\..\Qt\Static\5.6.3\mkspecs\win32-msvc2017;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SCRIPT_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Static\5.6.3\lib\Qt5OpenGL.lib;C:\Qt\Static\5.6.3\lib\Qt5Widgets.lib;C:\Qt\Static\5.6.3\lib\Qt5Script.lib;C:\Qt\Static\5.6.3\plugins\platforms\qwindows.lib;gdi32.lib;ole32.lib;winspool.lib;imm32.lib;winmm.lib;oleaut32.lib;opengl32.lib;shlwapi.lib;shell32.lib;rpcrt4.lib;C:\Qt\Static\5.6.3\lib\Qt5PlatformSupport.lib;C:\Qt\Static\5.6.3\lib\Qt5DBus.lib;ws2_32.lib;netapi32.lib;user32.lib;C:\Qt\Static\5.6.3\lib\qtfreetype.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qicns.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qico.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qtga.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qtiff.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qwbmp.lib;C:\Qt\Static\5.6.3\plugins\imageformats\qwebp.lib;C:\Qt\Static\5.6.3\lib\Qt5Gui.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;glu32.lib;opengl32.lib;gdi32.lib;C:\Qt\Static\5.6.3\lib\qtharfbuzzng.lib;C:\Qt\Static\5.6.3\plugins\bearer\qgenericbearer.lib;C:\Qt\Static\5.6.3\plugins\bearer\qnativewifibearer.lib;C:\Qt\Static\5.6.3\lib\Qt5Network.lib;dnsapi.lib;iphlpapi.lib;advapi32.lib;C:\Qt\Static\5.6.3\lib\Qt5Core.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;mpr.lib;C:\Qt\Static\5.6.3\lib\qtpcre.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Static\5.6.3\lib;C:\Qt\Static\5.6.3\plugins\platforms;C:\Qt\Static\5.6.3\plugins\imageformats;C:\Qt\Static\5.6.3\plugins\bearer;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\HandwritingRecognition.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_SCRIPT_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Implementation\DrawingBoardScene.cpp" />
+    <ClCompile Include="..\..\Implementation\DrawingPen.cpp" />
+    <ClCompile Include="..\..\Implementation\HandwritingRecognition.cpp" />
+    <ClCompile Include="..\..\Implementation\Matrix.cpp" />
+    <ClCompile Include="..\..\Implementation\NeuralNetwork.cpp" />
+    <ClCompile Include="handwritingrecognition_plugin_import.cpp" />
+    <ClCompile Include="..\..\Implementation\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Implementation\DrawingBoardScene.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\Implementation\DrawingBoardScene.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\Qt\Static\5.6.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB -D_MSC_VER=1910 -D_WIN32 -IC:/Qt/Static/5.6.3/mkspecs/win32-msvc2017 -IC:/HandwritingRecognition/Build/QMake -IC:/HandwritingRecognition/Interface -IC:/HandwritingRecognition/Implementation -IC:/Qt/Static/5.6.3/include -IC:/Qt/Static/5.6.3/include/QtOpenGL -IC:/Qt/Static/5.6.3/include/QtWidgets -IC:/Qt/Static/5.6.3/include/QtGui -IC:/Qt/Static/5.6.3/include/QtNetwork -IC:/Qt/Static/5.6.3/include/QtScript -IC:/Qt/Static/5.6.3/include/QtCore ..\..\Implementation\DrawingBoardScene.hpp -o debug\moc_DrawingBoardScene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC ../../Implementation/DrawingBoardScene.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_DrawingBoardScene.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\Implementation\DrawingBoardScene.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\Qt\Static\5.6.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB -D_MSC_VER=1910 -D_WIN32 -IC:/Qt/Static/5.6.3/mkspecs/win32-msvc2017 -IC:/HandwritingRecognition/Build/QMake -IC:/HandwritingRecognition/Interface -IC:/HandwritingRecognition/Implementation -IC:/Qt/Static/5.6.3/include -IC:/Qt/Static/5.6.3/include/QtOpenGL -IC:/Qt/Static/5.6.3/include/QtWidgets -IC:/Qt/Static/5.6.3/include/QtGui -IC:/Qt/Static/5.6.3/include/QtNetwork -IC:/Qt/Static/5.6.3/include/QtScript -IC:/Qt/Static/5.6.3/include/QtCore ..\..\Implementation\DrawingBoardScene.hpp -o release\moc_DrawingBoardScene.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC ../../Implementation/DrawingBoardScene.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_DrawingBoardScene.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Implementation\DrawingPen.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\Implementation\DrawingPen.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\Qt\Static\5.6.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB -D_MSC_VER=1910 -D_WIN32 -IC:/Qt/Static/5.6.3/mkspecs/win32-msvc2017 -IC:/HandwritingRecognition/Build/QMake -IC:/HandwritingRecognition/Interface -IC:/HandwritingRecognition/Implementation -IC:/Qt/Static/5.6.3/include -IC:/Qt/Static/5.6.3/include/QtOpenGL -IC:/Qt/Static/5.6.3/include/QtWidgets -IC:/Qt/Static/5.6.3/include/QtGui -IC:/Qt/Static/5.6.3/include/QtNetwork -IC:/Qt/Static/5.6.3/include/QtScript -IC:/Qt/Static/5.6.3/include/QtCore ..\..\Implementation\DrawingPen.hpp -o debug\moc_DrawingPen.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC ../../Implementation/DrawingPen.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_DrawingPen.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\Implementation\DrawingPen.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\Qt\Static\5.6.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB -D_MSC_VER=1910 -D_WIN32 -IC:/Qt/Static/5.6.3/mkspecs/win32-msvc2017 -IC:/HandwritingRecognition/Build/QMake -IC:/HandwritingRecognition/Interface -IC:/HandwritingRecognition/Implementation -IC:/Qt/Static/5.6.3/include -IC:/Qt/Static/5.6.3/include/QtOpenGL -IC:/Qt/Static/5.6.3/include/QtWidgets -IC:/Qt/Static/5.6.3/include/QtGui -IC:/Qt/Static/5.6.3/include/QtNetwork -IC:/Qt/Static/5.6.3/include/QtScript -IC:/Qt/Static/5.6.3/include/QtCore ..\..\Implementation\DrawingPen.hpp -o release\moc_DrawingPen.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC ../../Implementation/DrawingPen.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_DrawingPen.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Implementation\HandwritingRecognition.hpp">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\Implementation\HandwritingRecognition.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\Qt\Static\5.6.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB -D_MSC_VER=1910 -D_WIN32 -IC:/Qt/Static/5.6.3/mkspecs/win32-msvc2017 -IC:/HandwritingRecognition/Build/QMake -IC:/HandwritingRecognition/Interface -IC:/HandwritingRecognition/Implementation -IC:/Qt/Static/5.6.3/include -IC:/Qt/Static/5.6.3/include/QtOpenGL -IC:/Qt/Static/5.6.3/include/QtWidgets -IC:/Qt/Static/5.6.3/include/QtGui -IC:/Qt/Static/5.6.3/include/QtNetwork -IC:/Qt/Static/5.6.3/include/QtScript -IC:/Qt/Static/5.6.3/include/QtCore ..\..\Implementation\HandwritingRecognition.hpp -o debug\moc_HandwritingRecognition.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">MOC ../../Implementation/HandwritingRecognition.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">debug\moc_HandwritingRecognition.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\Implementation\HandwritingRecognition.hpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\Qt\Static\5.6.3\bin\moc.exe  -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB -D_MSC_VER=1910 -D_WIN32 -IC:/Qt/Static/5.6.3/mkspecs/win32-msvc2017 -IC:/HandwritingRecognition/Build/QMake -IC:/HandwritingRecognition/Interface -IC:/HandwritingRecognition/Implementation -IC:/Qt/Static/5.6.3/include -IC:/Qt/Static/5.6.3/include/QtOpenGL -IC:/Qt/Static/5.6.3/include/QtWidgets -IC:/Qt/Static/5.6.3/include/QtGui -IC:/Qt/Static/5.6.3/include/QtNetwork -IC:/Qt/Static/5.6.3/include/QtScript -IC:/Qt/Static/5.6.3/include/QtCore ..\..\Implementation\HandwritingRecognition.hpp -o release\moc_HandwritingRecognition.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">MOC ../../Implementation/HandwritingRecognition.hpp</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">release\moc_HandwritingRecognition.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\Implementation\Matrix.hpp" />
+    <ClInclude Include="..\..\Implementation\NeuralNetwork.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_DrawingBoardScene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DrawingBoardScene.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_DrawingPen.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DrawingPen.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_HandwritingRecognition.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_HandwritingRecognition.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_HandwritingRecognition.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Implementation\Forms\HandwritingRecognition.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">..\..\Implementation\Forms\HandwritingRecognition.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">C:\Qt\Static\5.6.3\bin\uic.exe ..\..\Implementation\Forms\HandwritingRecognition.ui -o ui_HandwritingRecognition.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">UIC ../../Implementation/Forms/HandwritingRecognition.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|Win32&apos;">ui_HandwritingRecognition.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">..\..\Implementation\Forms\HandwritingRecognition.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">C:\Qt\Static\5.6.3\bin\uic.exe ..\..\Implementation\Forms\HandwritingRecognition.ui -o ui_HandwritingRecognition.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">UIC ../../Implementation/Forms/HandwritingRecognition.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|Win32&apos;">ui_HandwritingRecognition.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
